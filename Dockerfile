@@ -3,7 +3,7 @@ FROM grigio/meteor:1.0.3.1
 
 MAINTAINER miurahr
 
-RUN apt-get install -qq -y git && \
+RUN apt-get update && apt-get install -qq -y git && \
     git clone http://git.libreboard.com/libreboard/libreboard.git /app && \
     /meteor-build.sh
 
