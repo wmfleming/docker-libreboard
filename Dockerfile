@@ -1,7 +1,7 @@
 FROM grigio/meteor:1.0.3.1
 # based on debian jessie
 
-MAINTAINER miurahr
+MAINTAINER wmfleming
 
 RUN apt-get update && apt-get install -qq -y git && \
     git clone http://git.libreboard.com/libreboard/libreboard.git /app && \
